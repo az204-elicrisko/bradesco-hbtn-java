@@ -1,4 +1,4 @@
-class PersonagemGame {
+class PersonagemJava {
 	private int saudeAtual;
 	private String nome;
 	public int getSaudeAtual() {
