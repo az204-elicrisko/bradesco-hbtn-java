@@ -58,7 +58,7 @@ public class GerenciamentoDeContatos {
             System.out.println("Contato encontrado: " + nome);
             contato.exibirContato();
         } else {
-            System.out.println("Contato  " + nome + " não encontrado.");
+            System.out.println("Contato " + nome + " não encontrado.");
         }
     }
 
