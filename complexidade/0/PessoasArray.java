@@ -21,7 +21,7 @@ public class PessoasArray {
     // implementar o mehtodo de pesquisaConstante
     public void pesquisaTempoConstante(int id) throws IllegalArgumentException {
         try {
-            System.out.println("Nome pesquisado È " + nomes[id] + " que est· na posiÁ„o " + id);
+            System.out.println("Nome pesquisado √© " + nomes[id] + " que est√° na posi√ß√£o " + id);
         } catch (Exception ex) {
             throw new IllegalArgumentException("O array de nomes possui :" + nomes.length + " nomes.");
         }
