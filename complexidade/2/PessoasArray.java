@@ -28,8 +28,10 @@ public class PessoasArray {
             System.out.println("Passando pelo indice:" + mid);
             if (nome.compareTo(nomes[mid]) < 0) {
                 high = mid - 1;
+                encontrado = false;
             } else if (nome.compareTo(nomes[mid]) > 0) {
                 low = mid + 1;
+                encontrado = false;
             } else {
                 System.out.println("Nome " + nome + " encontrado na posição " + mid);
                 encontrado = true;
