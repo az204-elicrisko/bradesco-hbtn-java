@@ -1,6 +1,4 @@
-
 public class PessoasArray {
-
     private String[] nomes;
 
     public PessoasArray() {
@@ -18,10 +16,9 @@ public class PessoasArray {
         this.nomes = nomes;
     }
 
-    // implementar o mehtodo de pesquisaConstante
     public void pesquisaTempoConstante(int id) throws IllegalArgumentException {
         try {
-            System.out.println("Nome pesquisado e " + nomes[id] + " que esta na posicao " + id);
+            System.out.println("Nome pesquisado é " + nomes[id] + " que está na posição " + id);
         } catch (Exception ex) {
             throw new IllegalArgumentException("O array de nomes possui :" + nomes.length + " nomes.");
         }
