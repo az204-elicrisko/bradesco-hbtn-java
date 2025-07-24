@@ -25,7 +25,7 @@ public class PessoasArray {
         int high = nomes.length - 1;
         while (low <= high) {
             int mid = (low + high) / 2;
-            System.out.println("Passando pelo indice:" + mid);
+            System.out.println("Passando pelo indice: " + mid);
             if (nome.compareTo(nomes[mid]) < 0) {
                 high = mid - 1;
                 encontrado = false;
