@@ -1,22 +1,20 @@
-public class Comida implements Armazenavel {
+public class Comida {
 
     private String nome;
-    private int calorias;
+    private double calorias;
     private double preco;
 
-    
-
-    @Override
-    public void adicionarAoInventario(String nome, Object obj) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'adicionarAoInventario'");
+    public Comida(String nome, double calorias, double preco) {
+        this.nome = nome;
+        this.calorias = calorias;
+        this.preco = preco;
     }
 
     @Override
-    public Object obterDoInventario(String nome) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'obterDoInventario'");
+    public String toString() {
+        return "[" + nome + 
+                "] " + calorias +
+                " R$ " + preco;
     }
-    
 
 }
