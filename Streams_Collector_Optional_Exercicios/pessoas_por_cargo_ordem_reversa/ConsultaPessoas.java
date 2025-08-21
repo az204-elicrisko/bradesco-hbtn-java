@@ -1,3 +1,5 @@
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -21,8 +23,11 @@ public class ConsultaPessoas {
 
     public static TreeMap<String, TreeSet<Pessoa>> obterPessoasAgrupadasPorCargoEmOrdemReversa(List<Pessoa> pessoas) {
         TreeMap<String, TreeSet<Pessoa>> pessoasAgrupadasPorCargoEmOrdemReversa = pessoas.stream()
-        .collect(Collectors.groupingBy(Pessoa:getCargo, Collectors.mapping(Pessoa:getCargo, Collectors.))
-
+            .collect(Collectors.groupingBy(
+            Pessoa::getCargo,
+            () -> new TreeMap<>(Collections.reverseOrder()),
+            Collectors.toCollection(TreeSet::new)
+        ));
         return pessoasAgrupadasPorCargoEmOrdemReversa;
     }
 }
