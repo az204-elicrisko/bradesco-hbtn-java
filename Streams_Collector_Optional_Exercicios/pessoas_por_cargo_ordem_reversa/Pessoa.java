@@ -32,6 +32,7 @@ public class Pessoa implements Comparable<Pessoa> {
 
     @Override
     public int compareTo(Pessoa pessoa) {
-        return this.cargo.compareTo(pessoa.cargo);
+        return this.cargo.compareTo(pessoa.cargo) == 0 ? this.nome.compareTo(pessoa.nome)
+        : this.cargo.compareTo(pessoa.cargo);
     }
 }
